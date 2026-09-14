@@ -1,0 +1,12 @@
+{
+  "version": "v08",
+  "frozen": true,
+  "stage": "PROPOSAL_ONLY",
+  "sha256": {
+    "config_v08_dual_scale.json": "d33da836988973a137a44740d45e6add7dc9d04ccc0c931c6e301bcacee6b0e5",
+    "eval_command.sh": "dfb08c7bd28bdcb9f2c80106438dd3d94f34c5920e37e8b10abf20a35ac38556",
+    "metrics.json": "a021e5e308ff1f2dbb5192e998c7576add73e625bfb2010f05b0977d5670ff86",
+    "README.md": "29a37e3f9f6f96b92e55f1e5caa716fe4c1352546d9b212580bf93e8ecfa3660",
+    "train_command.sh": "dfb08c7bd28bdcb9f2c80106438dd3d94f34c5920e37e8b10abf20a35ac38556"
+  }
+}

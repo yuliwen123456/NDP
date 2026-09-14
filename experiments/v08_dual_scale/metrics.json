@@ -1,0 +1,14 @@
+{
+  "version": "v08",
+  "AP": null,
+  "FPR95": null,
+  "AUROC": null,
+  "delta_vs_v06": {
+    "AP": null,
+    "FPR95": null,
+    "AUROC": null
+  },
+  "conclusion": "NEEDS_MORE_TESTING",
+  "stage": "PROPOSAL_ONLY",
+  "checkpoint_evaluated": null
+}
