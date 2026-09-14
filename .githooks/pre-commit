@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+if [ -n "${NDP_INTEGRITY_PYTHON:-}" ]; then
+    exec "$NDP_INTEGRITY_PYTHON" -B scripts/check_version_integrity.py
+fi
+exec python3 -B scripts/check_version_integrity.py
