@@ -1,0 +1,12 @@
+{
+  "version": "v10",
+  "frozen": true,
+  "stage": "PROPOSAL_ONLY",
+  "sha256": {
+    "config_v10_conditional_combination.json": "bca9bf572d6d906cfa7df787c4b190110ecf8b7f87814aa92ba2e0e9ed015d68",
+    "eval_command.sh": "43c9d49d4fff67d01f2a3d503494a0323ff9287f5dd33c4017dd4b4f36768e91",
+    "metrics.json": "9d1c0a79f7cfa6ffaa5451293b440c0cd18884d054d3911ee846312a196b17bc",
+    "README.md": "83f93418afb0aa9955f228fcdc5a7e48f9125885e0a81831ae99e1149b8a61bb",
+    "train_command.sh": "43c9d49d4fff67d01f2a3d503494a0323ff9287f5dd33c4017dd4b4f36768e91"
+  }
+}
