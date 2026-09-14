@@ -1,0 +1,12 @@
+{
+  "version": "v09",
+  "frozen": true,
+  "stage": "PROPOSAL_ONLY",
+  "sha256": {
+    "config_v09_class_conditional.json": "820329f2fc0274338b5aed090e82f73815f3150ed84c2a102999eb6a90ceefcd",
+    "eval_command.sh": "6c89d492f2d6e19325a934d3b436a4938aaa77dcfdee4308ed85d89b9de82cda",
+    "metrics.json": "24bf366254712a2ff52f288c4bb6d2a9a461c9bae5bfbe5e22a2c0fe589f294d",
+    "README.md": "bb81d7bb956d67edde771af75e426c14e52f53b2f9294050ac434e250dfcaa5f",
+    "train_command.sh": "6c89d492f2d6e19325a934d3b436a4938aaa77dcfdee4308ed85d89b9de82cda"
+  }
+}
