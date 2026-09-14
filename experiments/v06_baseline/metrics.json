@@ -1,0 +1,16 @@
+{
+  "version": "v06",
+  "epoch": 10,
+  "split": "STU public validation, 8659 frames",
+  "scope": "point-level OOD",
+  "AP": 74.55320680581926,
+  "FPR95": 1.4472667591263995,
+  "AUROC": 99.3599571729236,
+  "threshold": -1.2335095405578613,
+  "delta_vs_v06": {
+    "AP": 0,
+    "FPR95": 0,
+    "AUROC": 0
+  },
+  "conclusion": "KEEP"
+}

@@ -1,0 +1,107 @@
+{
+  "arm": "bn-ema-b2",
+  "root": "/root/autodl-tmp/NDP",
+  "baseline": "/root/autodl-tmp/NDP/outputs/experiment-20260912-ndp-stu",
+  "output": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611",
+  "samples": 898,
+  "micro_batch": 2,
+  "accumulation": 4,
+  "epochs": 10,
+  "optimizer_updates": 1130,
+  "training_overrides": [
+    "Use saved fourth baseline.yaml; physical=2, accumulation=4, LR=2e-4, seed=2025, epochs=10, OneCycle=1130; runtime loss compensation v1 plus BN group-retention policy v1"
+  ],
+  "stages": [
+    {
+      "name": "fit",
+      "command": [
+        "/root/autodl-tmp/NDP/envs/ndp/bin/python",
+        "-B",
+        "/root/autodl-tmp/NDP/outputs/sixth-bn-ema-20260914/train.py",
+        "formal",
+        "general.save_dir=/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/training",
+        "hydra.run.dir=/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/hydra"
+      ],
+      "env": {
+        "CUDA_VISIBLE_DEVICES": "0",
+        "OUTPUT_DIR": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/training"
+      }
+    },
+    {
+      "name": "infer-epoch7",
+      "checkpoint_source": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/training/epoch=6.ckpt",
+      "command": [
+        "bash",
+        "/root/autodl-tmp/NDP/run_ndp_inference.sh",
+        "data.batch_size=1",
+        "data.test_batch_size=1",
+        "data.num_workers=2"
+      ],
+      "env": {
+        "CUDA_VISIBLE_DEVICES": "0",
+        "OUTPUT_DIR": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/epoch7-inference",
+        "NDP_CKPT": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/epoch7.ckpt"
+      }
+    },
+    {
+      "name": "evaluate-epoch7",
+      "command": [
+        "/root/autodl-tmp/NDP/envs/ndp/bin/python",
+        "/root/autodl-tmp/NDP/code/stu_dataset/compute_point_level_ood.py",
+        "--data-dir",
+        "/root/autodl-tmp/NDP/data/test",
+        "--pred-dir",
+        "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/epoch7-inference/prediction",
+        "--output",
+        "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/epoch7-metrics.json"
+      ],
+      "env": {
+        "CUDA_VISIBLE_DEVICES": ""
+      },
+      "prediction_dir": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/epoch7-inference/prediction"
+    },
+    {
+      "name": "infer-epoch10",
+      "checkpoint_source": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/training/epoch=9.ckpt",
+      "command": [
+        "bash",
+        "/root/autodl-tmp/NDP/run_ndp_inference.sh",
+        "data.batch_size=1",
+        "data.test_batch_size=1",
+        "data.num_workers=2"
+      ],
+      "env": {
+        "CUDA_VISIBLE_DEVICES": "0",
+        "OUTPUT_DIR": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/epoch10-inference",
+        "NDP_CKPT": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/epoch10.ckpt"
+      }
+    },
+    {
+      "name": "evaluate-epoch10",
+      "command": [
+        "/root/autodl-tmp/NDP/envs/ndp/bin/python",
+        "/root/autodl-tmp/NDP/code/stu_dataset/compute_point_level_ood.py",
+        "--data-dir",
+        "/root/autodl-tmp/NDP/data/test",
+        "--pred-dir",
+        "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/epoch10-inference/prediction",
+        "--output",
+        "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/epoch10-metrics.json"
+      ],
+      "env": {
+        "CUDA_VISIBLE_DEVICES": ""
+      },
+      "prediction_dir": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/epoch10-inference/prediction"
+    }
+  ],
+  "comparison_baseline": "/root/autodl-tmp/NDP/outputs/compare-loss-corrected-b2-20260913-194933",
+  "objective": "Relative to fifth, change ONLY backbone BN running-stat retention per accumulation group; preserve fifth loss correction. Not physical-batch8 normalization.",
+  "correction": "Criterion sample-sum terms times actual accumulation-group length; total loss times 4/group length. Includes auxiliary losses and epoch tail.",
+  "remaining_differences": [
+    "micro-batch BatchNorm",
+    "mean of micro-batch point losses vs point-weighted global mean",
+    "batch-dependent sampling"
+  ],
+  "entry": "/root/autodl-tmp/NDP/outputs/sixth-bn-ema-20260914/train.py",
+  "bn_policy": "62 backbone BNs: preserve original momenta individually; use 1-(1-original_m)**(1/actual_group_size). Original .02:16 modules; .1:46 modules. Full group4; tail group1."
+}
