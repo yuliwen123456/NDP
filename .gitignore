@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.bin
+*.label
+*.npz
+*.zip
+*.bundle
+.env
+.env.*
+predictions/
+datasets/
