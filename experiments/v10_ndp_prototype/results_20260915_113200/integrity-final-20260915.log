@@ -1,0 +1,16 @@
+CHECK /root/autodl-tmp/NDP/research_version_worktrees/v10_prototype
+CURRENT FILE STATUS
+(clean)
+PASS: frozen snapshots and tracked history are intact; no large model/data files in scope.
+CHECK /root/autodl-tmp/NDP/research_versions
+CURRENT FILE STATUS
+(clean)
+PASS: frozen snapshots and tracked history are intact; no large model/data files in scope.
+CHECK /root/autodl-tmp/NDP/research_version_worktrees/v08
+CURRENT FILE STATUS
+(clean)
+PASS: frozen snapshots and tracked history are intact; no large model/data files in scope.
+CHECK /root/autodl-tmp/NDP/research_version_worktrees/v09
+CURRENT FILE STATUS
+(clean)
+PASS: frozen snapshots and tracked history are intact; no large model/data files in scope.

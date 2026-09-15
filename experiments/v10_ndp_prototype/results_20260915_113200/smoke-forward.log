@@ -1,0 +1,57 @@
+[PANOPTIC EVAL] IGNORE:  0
+[PANOPTIC EVAL] INCLUDE:  [ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19]
+test: [125, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 169], 19
+/root/autodl-tmp/NDP/data/test/125/velodyne
+/root/autodl-tmp/NDP/data/test/137/velodyne
+/root/autodl-tmp/NDP/data/test/138/velodyne
+/root/autodl-tmp/NDP/data/test/139/velodyne
+/root/autodl-tmp/NDP/data/test/140/velodyne
+/root/autodl-tmp/NDP/data/test/141/velodyne
+/root/autodl-tmp/NDP/data/test/142/velodyne
+/root/autodl-tmp/NDP/data/test/143/velodyne
+/root/autodl-tmp/NDP/data/test/144/velodyne
+/root/autodl-tmp/NDP/data/test/145/velodyne
+/root/autodl-tmp/NDP/data/test/146/velodyne
+/root/autodl-tmp/NDP/data/test/147/velodyne
+/root/autodl-tmp/NDP/data/test/148/velodyne
+/root/autodl-tmp/NDP/data/test/149/velodyne
+/root/autodl-tmp/NDP/data/test/150/velodyne
+/root/autodl-tmp/NDP/data/test/151/velodyne
+/root/autodl-tmp/NDP/data/test/152/velodyne
+/root/autodl-tmp/NDP/data/test/153/velodyne
+/root/autodl-tmp/NDP/data/test/169/velodyne
+V08 spatial consistency: DISABLED
+V09 ID conditional calibration: DISABLED
+Prototype module: ENABLED
+MODEL_READY {"parameters": 39672034, "trainable": 0, "feature_dim": 128, "num_classes": 19, "gpu": "NVIDIA GeForce RTX 3090", "gpu_count_used": 1, "batch_size": 1, "evaluation_frames": 8659}
+PROTOTYPE_BUILD 1 / 3 elapsed 9.3
+PROTOTYPE_BUILD 2 / 3 elapsed 9.6
+PROTOTYPE_BUILD 3 / 3 elapsed 9.9
+[Prototype Statistics]
+num_classes = 19 feature_dim = 128 prototype_shape = [19, 128]
+class 0 car points = 8989 norm_before = 24.206462072450247 norm_after = 0.9999999403953552 valid = True
+class 1 bicycle points = 0 norm_before = 0.0 norm_after = 0.0 valid = False
+class 2 motorcycle points = 29 norm_before = 22.83423810319804 norm_after = 1.0 valid = True
+class 3 truck points = 368 norm_before = 34.31884591162694 norm_after = 1.0 valid = True
+class 4 other-vehicle points = 28 norm_before = 31.166248687148837 norm_after = 1.0 valid = True
+class 5 person points = 175 norm_before = 30.12759498020052 norm_after = 0.9999999403953552 valid = True
+class 6 bicyclist points = 0 norm_before = 0.0 norm_after = 0.0 valid = False
+class 7 motorcyclist points = 0 norm_before = 0.0 norm_after = 0.0 valid = False
+class 8 road points = 66439 norm_before = 18.93336972674804 norm_after = 1.0 valid = True
+class 9 parking points = 0 norm_before = 0.0 norm_after = 0.0 valid = False
+class 10 sidewalk points = 8151 norm_before = 15.312838598431801 norm_after = 1.0 valid = True
+class 11 other-ground points = 86 norm_before = 15.122847020623823 norm_after = 1.0 valid = True
+class 12 building points = 120649 norm_before = 11.406988345971769 norm_after = 1.0 valid = True
+class 13 fence points = 30114 norm_before = 13.82443720978321 norm_after = 1.0 valid = True
+class 14 vegetation points = 98581 norm_before = 12.033819650978948 norm_after = 1.0 valid = True
+class 15 trunk points = 8283 norm_before = 15.561811233752973 norm_after = 1.0 valid = True
+class 16 terrain points = 11136 norm_before = 15.415545559205478 norm_after = 1.0 valid = True
+class 17 pole points = 2121 norm_before = 22.00418733884938 norm_after = 1.0 valid = True
+class 18 traffic-sign points = 1351 norm_before = 24.838875432722013 norm_after = 1.0 valid = True
+ID_NORMALIZATION 1 / 3 elapsed 10.6
+ID_NORMALIZATION 2 / 3 elapsed 10.9
+ID_NORMALIZATION 3 / 3 elapsed 11.2
+ID_STATISTICS {"S_ndp": {"count": 356500, "mean": -2.6698095621745015, "std": 0.29663573969811885, "min": -2.7264535427093506, "max": 25.440444946289062}, "S_proto": {"count": 356500, "mean": 0.051220119125043866, "std": 0.0573161252011259, "min": 0.0010005831718444824, "max": 0.6092112064361572}, "split": "train", "ood_used": false, "prototypes_sha256": "c652a4e51a389b76a9cb679196ed365c222266e341e9eac0660ca7094104b35b", "checkpoint_sha256": "78e53764b2bf210337646dd2134d375074552bf0a39f660473fe29fe959ffb07", "config_sha256": "813d6740da6b5730e924b5ed1e3f415ad5330f060c283490a548291c10708ee0", "training_database_sha256": "95dcb714bed7852922fdf6ce1f8864aae2942afcc081bb145b0b8e4e827518e7"}
+INFERENCE 1 / 3 elapsed 12.1
+INFERENCE 2 / 3 elapsed 12.5
+INFERENCE 3 / 3 elapsed 13.0

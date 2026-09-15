@@ -1,0 +1,22 @@
+{
+  "S_ndp": {
+    "count": 106329999,
+    "mean": -2.667524274108452,
+    "std": 0.34262556425074,
+    "min": -2.726457357406616,
+    "max": 49.37762451171875
+  },
+  "S_proto": {
+    "count": 106329999,
+    "mean": 0.05059241421017845,
+    "std": 0.057288122210076946,
+    "min": 0.0009579658508300781,
+    "max": 0.6464731693267822
+  },
+  "split": "train",
+  "ood_used": false,
+  "prototypes_sha256": "3154dc81f75b2f1dea219c7265f8b7fb4b314aed900f52b577f0a0aa36aa2307",
+  "checkpoint_sha256": "78e53764b2bf210337646dd2134d375074552bf0a39f660473fe29fe959ffb07",
+  "config_sha256": "813d6740da6b5730e924b5ed1e3f415ad5330f060c283490a548291c10708ee0",
+  "training_database_sha256": "95dcb714bed7852922fdf6ce1f8864aae2942afcc081bb145b0b8e4e827518e7"
+}
