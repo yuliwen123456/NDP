@@ -1,0 +1,18 @@
+{
+  "checkpoint": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/training/epoch=9.ckpt",
+  "baseline_predictions": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/epoch10-inference/prediction",
+  "baseline_metrics": "/root/autodl-tmp/NDP/outputs/compare-bn-ema-b2-20260914-005611/epoch10-metrics.json",
+  "train_database": "/root/autodl-tmp/NDP/data/train_database.yaml",
+  "training_scenes": ["206"],
+  "expected_training_frames": 898,
+  "expected_evaluation_frames": 8659,
+  "stu_root": "/root/autodl-tmp/NDP/code/stu_dataset",
+  "evaluation_data": "/root/autodl-tmp/NDP/data/test",
+  "seed": 2025,
+  "cpu_threads": 8,
+  "workers": 2,
+  "plotting_python": "/root/miniconda3/bin/python",
+  "smoke_frames": 3,
+  "prototype": {"enabled": true, "alpha": 0.5, "eps": 1e-8},
+  "expected_id_counts": [2973370,1192,8084,334836,49750,49780,0,3410,18226563,0,1645694,87798,45646604,7203308,23838604,3712108,1578424,614584,355890]
+}
