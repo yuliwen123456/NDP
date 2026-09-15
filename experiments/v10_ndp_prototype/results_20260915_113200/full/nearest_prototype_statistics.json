@@ -1,0 +1,119 @@
+{
+  "ood_points": 87499,
+  "classes": [
+    {
+      "class_id": 0,
+      "name": "car",
+      "count": 10843,
+      "percent": 12.392141624475709
+    },
+    {
+      "class_id": 1,
+      "name": "bicycle",
+      "count": 35947,
+      "percent": 41.08275523148836
+    },
+    {
+      "class_id": 2,
+      "name": "motorcycle",
+      "count": 220,
+      "percent": 0.2514314449307992
+    },
+    {
+      "class_id": 3,
+      "name": "truck",
+      "count": 0,
+      "percent": 0.0
+    },
+    {
+      "class_id": 4,
+      "name": "other-vehicle",
+      "count": 0,
+      "percent": 0.0
+    },
+    {
+      "class_id": 5,
+      "name": "person",
+      "count": 29596,
+      "percent": 33.82438656441788
+    },
+    {
+      "class_id": 6,
+      "name": "bicyclist",
+      "count": 0,
+      "percent": 0.0
+    },
+    {
+      "class_id": 7,
+      "name": "motorcyclist",
+      "count": 36,
+      "percent": 0.041143327352312596
+    },
+    {
+      "class_id": 8,
+      "name": "road",
+      "count": 6818,
+      "percent": 7.792089052446313
+    },
+    {
+      "class_id": 9,
+      "name": "parking",
+      "count": 0,
+      "percent": 0.0
+    },
+    {
+      "class_id": 10,
+      "name": "sidewalk",
+      "count": 432,
+      "percent": 0.4937199282277512
+    },
+    {
+      "class_id": 11,
+      "name": "other-ground",
+      "count": 404,
+      "percent": 0.4617195625092858
+    },
+    {
+      "class_id": 12,
+      "name": "building",
+      "count": 125,
+      "percent": 0.14285877552886317
+    },
+    {
+      "class_id": 13,
+      "name": "fence",
+      "count": 139,
+      "percent": 0.15885895838809586
+    },
+    {
+      "class_id": 14,
+      "name": "vegetation",
+      "count": 1951,
+      "percent": 2.2297397684544964
+    },
+    {
+      "class_id": 15,
+      "name": "trunk",
+      "count": 9,
+      "percent": 0.010285831838078149
+    },
+    {
+      "class_id": 16,
+      "name": "terrain",
+      "count": 126,
+      "percent": 0.14400164573309407
+    },
+    {
+      "class_id": 17,
+      "name": "pole",
+      "count": 852,
+      "percent": 0.9737254140047314
+    },
+    {
+      "class_id": 18,
+      "name": "traffic-sign",
+      "count": 1,
+      "percent": 0.0011428702042309054
+    }
+  ]
+}

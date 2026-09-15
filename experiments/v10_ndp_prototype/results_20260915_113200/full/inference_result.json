@@ -1,0 +1,61 @@
+{
+  "frames": 8659,
+  "coverage_exact": true,
+  "identity_checks": [
+    {
+      "frame": [
+        "125",
+        "000000"
+      ],
+      "points": 131072,
+      "feature_shape": [
+        109357,
+        128
+      ],
+      "label_shape": [
+        131072
+      ],
+      "baseline_max_abs_error": 0.0
+    },
+    {
+      "frame": [
+        "144",
+        "000272"
+      ],
+      "points": 131072,
+      "feature_shape": [
+        75342,
+        128
+      ],
+      "label_shape": [
+        131072
+      ],
+      "baseline_max_abs_error": 0.0
+    },
+    {
+      "frame": [
+        "169",
+        "000599"
+      ],
+      "points": 131072,
+      "feature_shape": [
+        92806,
+        128
+      ],
+      "label_shape": [
+        131072
+      ],
+      "baseline_max_abs_error": 0.0
+    }
+  ],
+  "peak_allocated_gib": 2.4484128952026367,
+  "peak_reserved_gib": 22.494140625,
+  "seconds": 3839.1904027462006,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "gpu_count_used": 1,
+  "batch_size": 1,
+  "alpha": 0.5,
+  "checkpoint_sha256": "78e53764b2bf210337646dd2134d375074552bf0a39f660473fe29fe959ffb07",
+  "config_sha256": "813d6740da6b5730e924b5ed1e3f415ad5330f060c283490a548291c10708ee0",
+  "training_database_sha256": "95dcb714bed7852922fdf6ce1f8864aae2942afcc081bb145b0b8e4e827518e7"
+}

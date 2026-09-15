@@ -1,0 +1,88 @@
+[PANOPTIC EVAL] IGNORE:  0
+[PANOPTIC EVAL] INCLUDE:  [ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19]
+test: [125, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 169], 19
+/root/autodl-tmp/NDP/data/test/125/velodyne
+/root/autodl-tmp/NDP/data/test/137/velodyne
+/root/autodl-tmp/NDP/data/test/138/velodyne
+/root/autodl-tmp/NDP/data/test/139/velodyne
+/root/autodl-tmp/NDP/data/test/140/velodyne
+/root/autodl-tmp/NDP/data/test/141/velodyne
+/root/autodl-tmp/NDP/data/test/142/velodyne
+/root/autodl-tmp/NDP/data/test/143/velodyne
+/root/autodl-tmp/NDP/data/test/144/velodyne
+/root/autodl-tmp/NDP/data/test/145/velodyne
+/root/autodl-tmp/NDP/data/test/146/velodyne
+/root/autodl-tmp/NDP/data/test/147/velodyne
+/root/autodl-tmp/NDP/data/test/148/velodyne
+/root/autodl-tmp/NDP/data/test/149/velodyne
+/root/autodl-tmp/NDP/data/test/150/velodyne
+/root/autodl-tmp/NDP/data/test/151/velodyne
+/root/autodl-tmp/NDP/data/test/152/velodyne
+/root/autodl-tmp/NDP/data/test/153/velodyne
+/root/autodl-tmp/NDP/data/test/169/velodyne
+V08 spatial consistency: DISABLED
+V09 ID conditional calibration: DISABLED
+Prototype module: ENABLED
+MODEL_READY {"parameters": 39672034, "trainable": 0, "feature_dim": 128, "num_classes": 19, "gpu": "NVIDIA GeForce RTX 3090", "gpu_count_used": 1, "batch_size": 1, "evaluation_frames": 8659}
+PROTOTYPE_BUILD 1 / 898 elapsed 17.1
+PROTOTYPE_BUILD 2 / 898 elapsed 17.4
+PROTOTYPE_BUILD 3 / 898 elapsed 17.7
+PROTOTYPE_BUILD 50 / 898 elapsed 33.3
+PROTOTYPE_BUILD 100 / 898 elapsed 50.1
+PROTOTYPE_BUILD 150 / 898 elapsed 65.7
+PROTOTYPE_BUILD 200 / 898 elapsed 82.4
+PROTOTYPE_BUILD 250 / 898 elapsed 97.2
+PROTOTYPE_BUILD 300 / 898 elapsed 113.1
+PROTOTYPE_BUILD 350 / 898 elapsed 130.7
+PROTOTYPE_BUILD 400 / 898 elapsed 149.3
+PROTOTYPE_BUILD 450 / 898 elapsed 165.8
+PROTOTYPE_BUILD 500 / 898 elapsed 182.9
+PROTOTYPE_BUILD 550 / 898 elapsed 199.8
+PROTOTYPE_BUILD 600 / 898 elapsed 215.5
+PROTOTYPE_BUILD 650 / 898 elapsed 232.2
+PROTOTYPE_BUILD 700 / 898 elapsed 246.7
+PROTOTYPE_BUILD 750 / 898 elapsed 262.4
+PROTOTYPE_BUILD 800 / 898 elapsed 279.9
+PROTOTYPE_BUILD 850 / 898 elapsed 298.4
+[Prototype Statistics]
+num_classes = 19 feature_dim = 128 prototype_shape = [19, 128]
+class 0 car points = 2973370 norm_before = 23.83777555096997 norm_after = 1.0 valid = True
+class 1 bicycle points = 1192 norm_before = 19.633555619323918 norm_after = 1.0 valid = True
+class 2 motorcycle points = 8084 norm_before = 22.698582814759174 norm_after = 1.0 valid = True
+class 3 truck points = 334836 norm_before = 26.762223081464555 norm_after = 1.0 valid = True
+class 4 other-vehicle points = 49750 norm_before = 29.283575120709177 norm_after = 1.0 valid = True
+class 5 person points = 49780 norm_before = 30.408323966718637 norm_after = 1.0 valid = True
+class 6 bicyclist points = 0 norm_before = 0.0 norm_after = 0.0 valid = False
+class 7 motorcyclist points = 3410 norm_before = 34.25113062129992 norm_after = 1.0 valid = True
+class 8 road points = 18226563 norm_before = 18.677676008399267 norm_after = 1.0 valid = True
+class 9 parking points = 0 norm_before = 0.0 norm_after = 0.0 valid = False
+class 10 sidewalk points = 1645694 norm_before = 14.989664432895365 norm_after = 1.0 valid = True
+class 11 other-ground points = 87798 norm_before = 16.780789756823495 norm_after = 1.0 valid = True
+class 12 building points = 45646604 norm_before = 11.59580971908583 norm_after = 1.0 valid = True
+class 13 fence points = 7203308 norm_before = 13.992005572914444 norm_after = 0.9999999403953552 valid = True
+class 14 vegetation points = 23838604 norm_before = 12.14062082893123 norm_after = 1.0 valid = True
+class 15 trunk points = 3712108 norm_before = 15.964925346635871 norm_after = 1.0 valid = True
+class 16 terrain points = 1578424 norm_before = 15.196677678976037 norm_after = 1.0 valid = True
+class 17 pole points = 614584 norm_before = 21.452364291415545 norm_after = 1.0 valid = True
+class 18 traffic-sign points = 355890 norm_before = 26.646935931599522 norm_after = 1.0 valid = True
+ID_NORMALIZATION 1 / 898 elapsed 314.9
+ID_NORMALIZATION 2 / 898 elapsed 315.2
+ID_NORMALIZATION 3 / 898 elapsed 315.6
+ID_NORMALIZATION 50 / 898 elapsed 331.8
+ID_NORMALIZATION 100 / 898 elapsed 348.7
+ID_NORMALIZATION 150 / 898 elapsed 364.3
+ID_NORMALIZATION 200 / 898 elapsed 380.7
+ID_NORMALIZATION 250 / 898 elapsed 395.3
+ID_NORMALIZATION 300 / 898 elapsed 411.1
+ID_NORMALIZATION 350 / 898 elapsed 428.9
+ID_NORMALIZATION 400 / 898 elapsed 447.5
+ID_NORMALIZATION 450 / 898 elapsed 464.3
+ID_NORMALIZATION 500 / 898 elapsed 481.7
+ID_NORMALIZATION 550 / 898 elapsed 498.8
+ID_NORMALIZATION 600 / 898 elapsed 514.6
+ID_NORMALIZATION 650 / 898 elapsed 531.4
+ID_NORMALIZATION 700 / 898 elapsed 545.9
+ID_NORMALIZATION 750 / 898 elapsed 561.7
+ID_NORMALIZATION 800 / 898 elapsed 579.3
+ID_NORMALIZATION 850 / 898 elapsed 597.8
+ID_STATISTICS {"S_ndp": {"count": 106329999, "mean": -2.667524274108452, "std": 0.34262556425074, "min": -2.726457357406616, "max": 49.37762451171875}, "S_proto": {"count": 106329999, "mean": 0.05059241421017845, "std": 0.057288122210076946, "min": 0.0009579658508300781, "max": 0.6464731693267822}, "split": "train", "ood_used": false, "prototypes_sha256": "3154dc81f75b2f1dea219c7265f8b7fb4b314aed900f52b577f0a0aa36aa2307", "checkpoint_sha256": "78e53764b2bf210337646dd2134d375074552bf0a39f660473fe29fe959ffb07", "config_sha256": "813d6740da6b5730e924b5ed1e3f415ad5330f060c283490a548291c10708ee0", "training_database_sha256": "95dcb714bed7852922fdf6ce1f8864aae2942afcc081bb145b0b8e4e827518e7"}

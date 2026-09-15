@@ -1,0 +1,8 @@
+test_empty_and_bad_inputs_fail (__main__.PrototypeTests) ... ok
+test_moments_and_fusion (__main__.PrototypeTests) ... ok
+test_original_point_gt_weighting_and_missing_class (__main__.PrototypeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.031s
+
+OK
